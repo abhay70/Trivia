@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:id="@+id/alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/alert_shape">
+
+
+
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="25sp"
+           />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="10dp"
+        android:id="@+id/alertTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alert"
+        android:background="@color/white"
+
+        >
+
+        <EditText
+
+            android:gravity="center"
+            android:id="@+id/add_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:text=""
+            android:layout_margin="5dp"
+            />
+
+    </RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@+id/alertTextLayout"
+    >
+
+
+    <Button
+        android:id="@+id/dialogButtonOK"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="OK"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:textSize="15sp"
+        />
+    <ImageView
+        android:background="@color/white"
+        android:layout_width="4dp"
+        android:layout_height="match_parent"
+        />
+
+    <Button
+        android:id="@+id/dialogButtonNo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="Cancel"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        />
+
+</LinearLayout>
+
+
+</RelativeLayout>
